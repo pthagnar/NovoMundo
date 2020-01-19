@@ -1,0 +1,27 @@
+name,tiles,albedo
+ice cap,NovoMundo.graphics.tiles.ice.gif,0.6f
+glacier,NovoMundo.graphics.tiles.iceland.gif,0.6f
+lifeless dryland,NovoMundo.graphics.tiles.land.gif,0.25f
+lifeless highland,NovoMundo.graphics.tiles.tundra.gif,0.25f
+lifeless wetland,NovoMundo.graphics.tiles.land.gif,0.25f
+,,
+deep soup,NovoMundo.graphics.tiles.ocean.gif,0.06f
+shallow soup,NovoMundo.graphics.tiles.shallows.gif,0.06f
+deep canfield ocean,NovoMundo.graphics.tiles.ocean.gif,0.1f
+shallow canfield ocean,NovoMundo.graphics.tiles.shallows.gif,0.1f
+deep slime ocean,NovoMundo.graphics.tiles.ocean.gif,0.1f
+shallow slime ocean,NovoMundo.graphics.tiles.shallows.gif,0.1f
+deep ocean,NovoMundo.graphics.tiles.ocean.gif,0.06f
+shallow ocean,NovoMundo.graphics.tiles.shallows.gif,0.06f
+,,
+,,
+slimeland,NovoMundo.graphics.tiles.grass.png,0.15f
+mossland,NovoMundo.graphics.tiles.grass.png,0.15f
+scrubland,NovoMundo.graphics.tiles.grass.png,0.15f
+fungland,NovoMundo.graphics.tiles.grass.png,0.15f
+carboniferous forest,NovoMundo.graphics.tiles.grass.png,0.15f
+,,
+tundra,NovoMundo.graphics.tiles.tundra.gif,0.4f
+woodland,NovoMundo.graphics.tiles.forest.png,0.16f
+grassland,NovoMundo.graphics.tiles.grass.png,0.25f
+desert,NovoMundo.graphics.tiles.land.gif,0.25f

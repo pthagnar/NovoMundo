@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D8E985BE-5DE3-4281-A7EB-A2FDA3B7A2E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NovoMundo</RootNamespace>
+    <AssemblyName>NovoMundo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glade-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="graphics\quadviews\quadview.png" />
+    <EmbeddedResource Include="graphics\quadviews\quadviewwet.png" />
+    <EmbeddedResource Include="graphics\quadviews\quadviewice.png" />
+    <EmbeddedResource Include="graphics\tiles\land.gif" />
+    <EmbeddedResource Include="graphics\tiles\shallows.gif" />
+    <EmbeddedResource Include="graphics\tiles\ocean.gif" />
+    <EmbeddedResource Include="graphics\tiles\ice.gif" />
+    <EmbeddedResource Include="graphics\large\x1PixCanvasWhite.png" />
+    <EmbeddedResource Include="graphics\icons\energy.png" />
+    <EmbeddedResource Include="graphics\icons\nous.png" />
+    <EmbeddedResource Include="graphics\icons\dna.png" />
+    <EmbeddedResource Include="graphics\icons\pepe.png" />
+    <EmbeddedResource Include="graphics\icons\globe.png" />
+    <EmbeddedResource Include="graphics\large\earthHeightMap.bmp" />
+    <EmbeddedResource Include="graphics\tiles\iceland.gif" />
+    <EmbeddedResource Include="graphics\tiles\grass.png" />
+    <EmbeddedResource Include="graphics\tiles\forest.png" />
+    <EmbeddedResource Include="graphics\tiles\tundra.gif" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\ocean.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\grassland.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\tundra.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\desert.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\glacier.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\broadleaf.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\shallows.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\boreal.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\mountain.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\hill.png" />
+    <EmbeddedResource Include="graphics\civ2cities\classical.png" />
+    <EmbeddedResource Include="graphics\creatures\civ2fish.png" />
+    <EmbeddedResource Include="graphics\creatures\greenslime1.png" />
+    <EmbeddedResource Include="graphics\creatures\greenslime2.png" />
+    <EmbeddedResource Include="graphics\creatures\greenslime3.png" />
+    <EmbeddedResource Include="graphics\creatures\greenslime4.png" />
+    <EmbeddedResource Include="graphics\creatures\civ2buffalo.png" />
+    <EmbeddedResource Include="graphics\creatures\civ2maize.png" />
+    <EmbeddedResource Include="graphics\creatures\civ2muskox.png" />
+    <EmbeddedResource Include="graphics\civ2cities\hut.png" />
+    <EmbeddedResource Include="graphics\civ2cities\monolith.png" />
+    <EmbeddedResource Include="graphics\civ2cities\euro.png" />
+    <EmbeddedResource Include="graphics\civ2cities\oriental.png" />
+    <EmbeddedResource Include="graphics\civ2cities\industrial.png" />
+    <EmbeddedResource Include="graphics\civ2cities\modern.png" />
+    <EmbeddedResource Include="graphics\tiles\civ2tiles\deserthill.png" />
+    <EmbeddedResource Include="graphics\creatures\large\blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\MainWindow.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuadrantDialog.cs" />
+    <Compile Include="gtk-gui\QuadrantDialog.cs" />
+    <Compile Include="QuadrantInfo.cs" />
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Earth.cs" />
+    <Compile Include="Quadrant.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
